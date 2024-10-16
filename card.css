@@ -1,0 +1,113 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(220, 216, 216);
+}
+#outter_container{
+    display: flex;
+    justify-content: center;
+}
+#inner_container{
+    height: 420px;
+    background-color: white;
+    color: black;
+    width: 450px;
+    margin-top: 3rem;
+    border: 1px solid;
+    border-radius: 20px 0px 20px 0px;
+}
+#image_outter{
+    height: 235px;
+    width: 100%;
+    background-image: url(./pexels-pixabay-259915.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+#image{
+    width: 220px;
+    height: 220px;
+    margin: 6px auto;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    border: 5px solid #f0f0f0; /* Optional border */
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+}
+#image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    filter: grayscale(100%);
+}
+#image:hover img {
+    transform: scale(1.1); 
+    filter: grayscale(0%);
+    cursor: url("./pointer.png"), pointer;
+}
+#profile-content{
+   text-align: center;
+}
+#profile-content h1{
+    margin-top: 5px;
+    font-size: 26px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+#profile-content span{
+    font-size: 16px;
+    color: darkgray;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+#aboutme{
+    padding: 5px;
+    font-size: 18px;
+}
+#footerdiv{
+    height:37px;
+    background-color: burlywood;
+    border-radius: 0 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.right-side, .left-side{
+    list-style-type:d none;
+}
+.right-side li, .left-side li{
+    display: inline-block;
+}
+.right-side li a{
+    margin-left: 1.6rem;
+    font-size: 20px;
+    color: black;
+}
+.left-side li a{
+    text-decoration: none;
+}
+#email_li{
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 10px 0 10px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+#email_li:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: transform 0.4 ease-in-out;
+    border-color: brown;
+}
